@@ -14,9 +14,24 @@ class GithubBot{
      
 
      async visitGithub() {
+      const CREDS = require('./config/creds');
   
       await this.page.goto('https://github.com/login')
       await this.page.waitForTimeout(500)
+
+      // username
+      await this.page.waitForTimeout(1500)
+      await this.page.focus(this.config.selectors.username_field)
+      await this.page.keyboard.type(this.config.username)
+  
+      // password
+      await this.page.waitForTimeout(1500)
+      await this.page.focus(this.config.selectors.password_field)
+      await this.page.keyboard.type(this.config.password)
+  
+      // On entre le clique sur le button de connexion
+      await this.page.click(this.config.selectors.login_button)
+
   
     }
     

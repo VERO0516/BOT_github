@@ -5,5 +5,12 @@
     "hashTags":["puppetter","javascript"],
     "settings":{
         "headless":false
+    },
+
+    "selectors":{
+
+        "username_field":"#login_field",
+        "password_field":"#password",
+        "login_button":"#login > div.auth-form-body.mt-3 > form > div > input.btn.btn-primary.btn-block.js-sign-in-button"
     }
 }
