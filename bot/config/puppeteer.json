@@ -1,0 +1,9 @@
+{
+    "base_url":"www.github.com",
+    "username":"veroniqueaero@gmail.com",
+    "password":"LZXstar1231",
+    "hashTags":["puppetter","javascript"],
+    "settings":{
+        "headless":false
+    }
+}
